@@ -1,0 +1,650 @@
+body{
+    width:100%;
+    height:100%;
+}
+
+*{/*清除所有标签的初始内外边框*/
+    padding:0;
+    margin:0;
+}
+
+.nav{
+    background-color:black;/*颜色*/
+    height:40px;/*高度40像素*/
+    width:100%;/*宽度为<body>的100%，也就是相同宽度*/
+    line-height:40px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:0px;/*距离顶部0像素*/
+    left:0;/*距离左侧边界0px*/
+}
+
+.nav li{
+    float:left;/*浮动*/
+    width:80px;/*设置一个<li>宽度80px*/
+    text-align:center;/*文本居中*/
+}
+
+.ul_top{
+    list-style:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    /*top: 30px;距离顶部30px*/
+    left: 50px;/*距离左侧50px*/
+}
+
+.nav a{
+    display:block;
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    line-height:40px;/*行高*/
+}
+
+.nav a:hover{
+    color:black;
+    background: white;
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 默认有灰色边框我们需要手动去掉 */
+    border: none; 
+    outline: none;
+    font-size: 15px;
+}
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0 auto;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+
+.search{
+    position: absolute;
+    left: 300px;
+    top:50px;
+    width: 500px;
+    height: 45px;
+    border: 1px solid #beb9b9;
+    /*overflow:hidden;*/
+    border-radius: 22px;   /*border-radius 属性用于向元素添加圆角边框：*/
+  }
+  .search input{
+    float: left;
+    width: 435px;
+    height: 42px;
+    padding-left: 20px;
+    border-radius: 19px;   /*border-radius 属性用于向元素添加圆角边框：*/
+    background: transparent;  /*背景透明*/
+
+  }
+  .search button{
+    float: left;
+    width: 55px;
+    height: 44px;
+    background-color: rgb(28, 67, 205);
+    font-size: 15px;
+    cursor: pointer; /*cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状*/
+    color: #fff;
+    position: absolute;
+    right:0;
+    border-radius:22px;
+    border: none;
+    
+  }
+  
+.header{
+    background-color:rgb(255, 255, 255);/*颜色*/
+    height:65px;/*高度40像素*/
+    width:280px;/*宽度*/
+    line-height:60px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:40px;/*距离顶部0像素*/
+    left:0;/*距离左侧边界0px*/
+}
+
+.header li{
+    /*float:left;/*浮动*/
+    display:inline-block;
+    width:100px;/*设置一个<li>宽度80px*/
+    text-align:center;/*文本居中*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ul_header{
+    list-style-type:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    /*top: 30px;距离顶部30px*/
+    left: 50px;/*距离左侧50px*/
+}
+
+.header a{
+    display:inline-block;
+    color: rgb(28, 67, 205);
+    text-decoration: none;
+    width: 200px;
+    line-height:40px;/*行高*/
+    /*top: 5px;*/
+    left: 30px;
+}
+
+
+ /* 下拉按钮样式 */
+ .dropbtn {
+    background-color: #e8eff9;
+    color:rgb(28, 67, 205);
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top: 53px;
+    left: 190px;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #ffffff
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #e8eff9;
+}
+
+.bot{
+    background-color:rgb(255, 255, 255);/*颜色*/
+    height:38px;/*高度40像素*/
+    width:160px;/*宽度*/
+    line-height:60px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:53px;/*距离顶部0像素*/
+    left: 900px;/*距离左侧边界0px*/
+}
+
+.bot li{
+    float:left;/*浮动*/
+    /*display:inline-block;*/
+    width:80px;/*设置一个<li>宽度80px*/
+    text-align:center;/*文本居中*/
+    font-size: 14px;/**/
+    
+}
+
+.ul_bot{
+    list-style-type:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    top: 0px;/*距离顶部30px*/
+    left: 0px;/*距离左侧50px*/
+}
+
+.bot a{
+    display:block;
+    color: #808080;
+    text-decoration: none;
+    width: 80px;
+    line-height:40px;/*行高*/
+    /*top: 5px;*/
+    left: 10px;
+}
+
+.bot a:hover{
+    color:rgb(28, 67, 205);
+    background: white;
+}
+
+.login{
+    background-color:rgb(255, 255, 255);/*颜色*/
+    height:38px;/*高度40像素*/
+    width:160px;/*宽度*/
+    line-height:60px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:53px;/*距离顶部0像素*/
+    left: 1050px;/*距离左侧边界0px*/
+}
+
+.login li{
+    float:left;/*浮动*/
+    /*display:inline-block;*/
+    width:80px;/*设置一个<li>宽度80px*/
+    text-align:center;/*文本居中*/
+    font-size: 14px;/**/
+    
+}
+
+.ul_login{
+    list-style-type:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    top: 0px;/*距离顶部30px*/
+    left: 0px;/*距离左侧50px*/
+}
+
+.login a{
+    display:block;
+    color: rgb(28, 67, 205);
+    text-decoration: none;
+    width: 80px;
+    line-height:40px;/*行高*/
+    /*top: 5px;*/
+    left: 10px;
+}
+
+.login a:hover{
+    text-decoration:underline;
+}
+
+.button {
+    background-color: white;
+    color:rgb(28, 67, 205);
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    position:absolute;
+    top: 53px;
+    left:1115px;
+    border: 1px solid rgb(28, 67, 205);
+    border-radius: 5px;
+    cursor:pointer;/*鼠标移动到 button 上显示小手*/
+}
+
+.button:hover {
+    background-color:#e8eff9; /* Green */
+    color: rgb(28, 67, 205);
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-top: solid #beb9b9 1px;
+    display:inline-block;
+    position:absolute;
+    top: 108px;
+    left:0;
+}
+
+
+.back{
+    width: 100%;
+    height: 530px;
+    background-color: rgb(245, 247, 249);
+    position:absolute;
+    top: 110px;
+    left:0;
+}
+
+
+.back h1 {
+    text-decoration:none;
+    position:absolute;
+    top: 132px;
+    left: 100px;
+    font-size: 84px;
+    }
+.back h2 {
+    text-decoration:none;
+    position:absolute;
+    top: 260px;
+    left: 100px;
+    height: 80px;
+    font-weight:normal;
+    font-size: 20px;
+    }
+    
+.back h3 {
+    text-decoration:none;
+    position:absolute;
+    top: 288px;
+    left: 100px;
+    height: 80px;
+    font-weight:normal;
+    font-size: 20px;
+    }
+        
+
+
+.button2 {
+    background-color: rgb(28, 67, 205);
+    color:white;
+    padding: 16px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    position:absolute;
+    top: 450px;
+    left:100px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;/*鼠标移动到 button 上显示小手*/
+}
+
+.button2:hover {
+    background-color:rgb(27, 57, 164); /* Green */
+    color: white;
+}
+
+.button3 {
+    background-color: white;
+    color:rgb(28, 67, 205);
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    position:absolute;
+    top: 450px;
+    left:244px;
+    border: 3px solid rgb(28, 67, 205);
+    border-radius: 5px;
+    cursor:pointer;/*鼠标移动到 button 上显示小手*/
+}
+
+.button3:hover {
+    background-color:#e8eff9; /* Green */
+    color: rgb(28, 67, 205);
+}
+
+
+.blocks{
+    background-color: rgb(244, 247, 248);  /*颜色*/
+    height:400px;/*高度140像素*/
+    width: 100%;/*宽度为<body>的100%，也就是相同宽度*/
+    line-height:50px;/*行高，看文字位置你就明白了*/
+    position: absolute;/*绝对定位*/
+    top: 660px;/*距离顶部0像素*/
+    left: 0;/*距离左侧边界0px*/
+}
+
+.blocks li{
+    float:left;/*浮动*/
+    width:33%;/*设置一个<li>宽度75px*/
+    text-align:left;/*文本居中*/
+    list-style: none;
+    border-radius:10px;
+
+}
+
+.blocks a{
+    display:block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 75%;
+    line-height:40px;
+}
+
+.blocks li:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+}
+
+
+.title1 h1 {
+    text-decoration:none;
+    position:absolute;
+    top: 1140px;
+    left: 50px;
+    font-weight:normal;
+    font-size: 45px;
+    }
+.title1 h2 {
+    text-decoration:none;
+    position:absolute;
+    top: 1205px;
+    left: 50px;
+    height: 80px;
+    font-weight:normal;
+    font-size: 20px;
+    }
+
+
+
+.videos{
+        background-color: rgb(255, 255, 255);  /*颜色*/
+        height:250px;/*高度140像素*/
+        width: 100%;/*宽度为<body>的100%，也就是相同宽度*/
+        line-height:50px;/*行高，看文字位置你就明白了*/
+        position: absolute;/*绝对定位*/
+        top: 1265px;/*距离顶部0像素*/
+        left: 0;/*距离左侧边界0px*/
+    }
+    
+.videos li{
+        float:left;/*浮动*/
+        width:25%;/*设置一个<li>宽度75px*/
+        text-align:left;/*文本居中*/
+        list-style: none;
+        border-radius:10px;
+    
+    }
+    
+.videos a{
+        display:block;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        width: 80%;
+        line-height:40px;
+    }
+    
+.videos li:hover{
+        transform: scale(1.05);
+        transition: transform 0.4s ease-in-out;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+    }
+
+
+.bottom{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(245, 247, 249);
+    position:absolute;
+    top: 1950px;
+    left:0;
+    }
+    
+    
+.bottom h1 {
+    text-decoration:none;
+    position:absolute;
+    font-weight:normal;
+    top: 50px;
+    left: 40px;
+    font-size: 12px;
+    }
+
+
+.others1 p {
+    text-decoration:none;
+    position:absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+
+.others1{
+    background-color:rgb(245, 247, 249);/*颜色*/
+    height:350px;/*高度40像素*/
+    width:100%;/*宽度为<body>的100%，也就是相同宽度*/
+    line-height:30px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:1600px;/*距离顶部0像素*/
+    left:0;/*距离左侧边界0px*/
+}
+
+.others1 li{
+    /*float:left;浮动*/
+    width:80px;/*设置一个<li>宽度80px*/
+    text-align:left;/*文本居中*/
+    height: 30px;
+}
+
+.ul_others1{
+    list-style:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    left: 30px;/*距离左侧50px*/
+    top: 60px;
+}
+
+.others1 a{
+    display:block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    line-height:40px;/*行高*/
+    font-size: 14px;
+}
+
+.others1 a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+
+
+.others2 p {
+    text-decoration:none;
+    position:absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+
+.others2{
+    background-color:rgb(245, 247, 249);/*颜色*/
+    height:350px;/*高度40像素*/
+    width:30%;/*宽度为<body>的100%，也就是相同宽度*/
+    line-height:30px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:1600px;/*距离顶部0像素*/
+    left: 300px;/*距离左侧边界0px*/
+}
+
+.others2 li{
+    /*float:left;浮动*/
+    width:80px;/*设置一个<li>宽度80px*/
+    text-align:left;/*文本居中*/
+    height: 30px;
+}
+
+.ul_others2{
+    list-style:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    left: 30px;/*距离左侧50px*/
+    top: 60px;
+}
+
+.others2 a{
+    display:block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    line-height:40px;/*行高*/
+    font-size: 14px;
+}
+
+.others2 a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+
+.others3 p {
+    text-decoration:none;
+    position:absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+
+.others3{
+    background-color:rgb(245, 247, 249);/*颜色*/
+    height:350px;/*高度40像素*/
+    width:30%;/*宽度为<body>的100%，也就是相同宽度*/
+    line-height:30px;/*行高*/
+    position:absolute;/*绝对定位*/
+    top:1600px;/*距离顶部0像素*/
+    left: 600px;/*距离左侧边界0px*/
+}
+
+.others3 li{
+    /*float:left;浮动*/
+    width:80px;/*设置一个<li>宽度80px*/
+    text-align:left;/*文本居中*/
+    height: 30px;
+}
+
+.ul_others3{
+    list-style:none;/*去除列表格式，消除小黑点*/
+    position:absolute;
+    left: 30px;/*距离左侧50px*/
+    top: 60px;
+}
+
+.others3 a{
+    display:block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    line-height:40px;/*行高*/
+    font-size: 14px;
+}
+
+.others3 a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.line2 {
+    width: 100%;
+    height: 1px;
+    border-top: solid #beb9b9 1px;
+    display:inline-block;
+    position:absolute;
+    top: 1950px;
+    left:0;
+}
